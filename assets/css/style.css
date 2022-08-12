@@ -1,1 +1,84 @@
+:root{
+    --fontcolor: black; 
+    --primary: blue;
+    --secondary: rgb(31, 31, 192); 
+}
+h2{
+    margin: 0;
+}
+input{
+    padding: 5px 86.5px; 
+    text-align: center;  
+}
+button{
+    padding: 5px 150px;
+}
 
+header{
+ color: white;
+ size: 100px;
+ text-align: center;
+ font-family:cursive;
+ text-shadow: rgb(212, 209, 209) 1px 0 10px;
+ background: linear-gradient(110deg,blue 50%, rgb(31, 31, 192) 50%);
+ margin-bottom: 10px;
+ padding-top: 7px;
+ padding-bottom: 7px;
+
+}
+.lighting{
+    animation: flicker 1.5s infinite alternate;
+    color: beige;
+}
+body{
+    background-color: whitesmoke;
+}
+
+/* Styling for side sections */
+aside{
+    margin-right: 20px;
+    color: white;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--primary);
+}
+
+#topSide{
+    border-bottom: 3px solid whitesmoke;
+}
+
+.CityDet{
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+    
+    } 20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
