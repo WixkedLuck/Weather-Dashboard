@@ -18,24 +18,30 @@
     <section class="side">
         <aside id="topSide">
             <h2>Search for a city:</h2><br>
-            <input type="text" id="search-city" name="City" placeholder="San Diego"><br>
+            <input type="text" id="search-city"  placeholder="San Diego"><br>
             <button class="Search" id="SearchBtn"> Search</button>
         </aside>
         <aside>
-            <button class="History" id="SeaBtn"> Sea Diego</button><br>
+            <button class="History" id="SeaBtn"></button><br>
             <button class="History" id="SunBtn"> Sun Diego</button><br>
         </aside>
     </section>
     <!-- center of website section -->
-    <section>
-        <h3 id="CityName">Atlanta</h3>
-        <p id="Temp">69</p>
-        <p id="Wind">6.67 MPH</p>
-        <p id="Humidity">46 %</p>
-        <p id="Index">.47</p>
+    <section class="CityDet">
+        <section class="TextCont">
+            <h3 id="CityName"> <span id="Date"></span></h3>
+            <p id="Temp"></p>
+            <p id="Wind"></p>
+            <p id="Humidity"></p>
+            <p id="Index"></p><br>
+            <img id="Image"></img>
+        </section>
     </section>
     <!-- visual section with cards -->
 
+    <!-- Script  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

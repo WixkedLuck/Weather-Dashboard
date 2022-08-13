@@ -6,6 +6,7 @@
 h2{
     margin: 0;
 }
+
 input{
     padding: 5px 86.5px; 
     text-align: center;  
@@ -47,13 +48,26 @@ aside{
     background-color: var(--primary);
 }
 
-#topSide{
+#topSide{  
     border-bottom: 3px solid whitesmoke;
 }
 
 .CityDet{
-    background-color: aqua;
+    display:inline-block;
+    width: 75%;
+   border: inset var(--primary) 5px;
+   font-family: cursive;
+    
 }
+.TextCont{
+    margin-left: 10px;
+}
+#CityName{
+    text-align: center;
+    font-size: 35px;
+    
+}
+
 
 
 
