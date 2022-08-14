@@ -1,42 +1,47 @@
-:root{
-    --fontcolor: black; 
+:root {
+    --fontcolor: black;
     --primary: blue;
-    --secondary: rgb(31, 31, 192); 
+    --secondary: rgb(31, 31, 192);
 }
-h2{
+
+h2 {
     margin: 0;
 }
 
-input{
-    padding: 5px 86.5px; 
-    text-align: center;  
+input {
+    padding: 5px 86.5px;
+    text-align: center;
 }
-button{
+
+button {
     padding: 5px 150px;
 }
 
-header{
- color: white;
- size: 100px;
- text-align: center;
- font-family:cursive;
- text-shadow: rgb(212, 209, 209) 1px 0 10px;
- background: linear-gradient(110deg,blue 50%, rgb(31, 31, 192) 50%);
- margin-bottom: 10px;
- padding-top: 7px;
- padding-bottom: 7px;
+header {
+    color: white;
+    size: 100px;
+    text-align: center;
+    font-family: cursive;
+    text-shadow: rgb(212, 209, 209) 1px 0 10px;
+    background: linear-gradient(110deg, blue 50%, rgb(31, 31, 192) 50%);
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 
 }
-.lighting{
+
+.lighting {
     animation: flicker 1.5s infinite alternate;
     color: beige;
 }
-body{
-    background-color: whitesmoke;
+
+body {
+    margin: 0;
+    background-color: rgb(5, 44, 70);;
 }
 
 /* Styling for side sections */
-aside{
+aside {
     margin-right: 20px;
     color: white;
     padding: 20px;
@@ -48,28 +53,63 @@ aside{
     background-color: var(--primary);
 }
 
-#topSide{  
+#topSide {
     border-bottom: 3px solid whitesmoke;
 }
 
-.CityDet{
-    display:inline-block;
+.CityDet {
+    display: inline-block;
     width: 75%;
-   border: inset var(--primary) 5px;
-   font-family: cursive;
-    
+    border: inset var(--primary) 5px;
+    font-family: cursive;
+
 }
-.TextCont{
-    margin-left: 10px;
-}
-#CityName{
+
+.TextCont {
     text-align: center;
-    font-size: 35px;
-    
+    color: white;
 }
 
+#CityName {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 35px;
+    background: linear-gradient(110deg, blue 50%, rgb(31, 31, 192) 50%);
 
+}
 
+.WeatherCards {
+    display:inline-table;
+    width: 75%;
+    background-color: rgb(5, 44, 70);
+    border: inset var(--primary) 5px;
+    font-family: cursive;
+
+}
+#fiveDayFor{
+    color: white;
+    text-shadow: rgb(212, 209, 209) 1px 0 10px;
+    text-align: center;
+    padding: 20px;
+    border: 8px solid;
+    border-image: linear-gradient(to left, #F4C430, blue) 1 0;
+}
+
+.BorderCards{
+    color: whitesmoke;
+    margin-top: 0px;
+    text-align: center;
+    font-family: cursive;
+    justify-content: space-between;
+    border: 8px solid;
+    border-image: linear-gradient(to bottom, blue, #F4C430) 0 1;
+    margin-left: 10px;
+    width:18%;
+    float: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
 
 
 
@@ -88,11 +128,18 @@ aside{
 
 
 @keyframes flicker {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-    
-    } 20%, 24%, 55% {        
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {}
+
+    20%,
+    24%,
+    55% {
         text-shadow: none;
-    }    
-  }
+    }
+}
