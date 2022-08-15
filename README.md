@@ -27,7 +27,7 @@ Clone the repository on GitHub then open Git on your local machine. First find a
 The purpose of this project is to make a functional webpage that uses server-side APIs to retrive data based off of requests made to a url. With the data retrived, we are able to display a weather forcast for a city. 
 
 
-![Challange6-WeatherAPI](./images/Weather.PNG)
+![Challange6-WeatherAPI](./images/Weather-Dash.PNG)
 
 # Deployed Site 
 https://wixkedluck.github.io/Work-Day-Scheduler-/
