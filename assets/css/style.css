@@ -121,7 +121,9 @@ aside {
 }
 
 
-
+#image{
+    border: solid black 5px;
+}
 
 
 
