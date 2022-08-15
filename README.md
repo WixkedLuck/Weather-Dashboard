@@ -30,6 +30,6 @@ The purpose of this project is to make a functional webpage that uses server-sid
 ![Challange6-WeatherAPI](./images/Weather-Dash.PNG)
 
 # Deployed Site 
-https://wixkedluck.github.io/Work-Day-Scheduler-/
+https://wixkedluck.github.io/Weather-Dashboard/
 
 
