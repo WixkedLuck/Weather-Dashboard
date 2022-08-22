@@ -85,20 +85,40 @@ $SearchBtn.on('click', function (event) {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            for (i = 0; i < 5; i++) {
-                document.getElementById("Temp" + (i + 1)).innerHTML = 'Temp: ' + Number(data.list[i + 1].main.temp).toFixed(0) + "°F";
-            }
-            for (i = 0; i < 5; i++) {
-                document.getElementById("Wind" + (i + 1)).innerHTML = 'Wind: ' + Number(data.list[i + 1].wind.speed) + " Mph";
-            }
-            for (i = 0; i < 5; i++) {
-                document.getElementById("Humidity" + (i + 1)).innerHTML = 'Humidity: ' + Number(data.list[i + 1].main.humidity);
-            }
-            for (i = 0; i < 5; i++) {
-                document.getElementById("Date" + (i + 1)).innerHTML = (data.list[i + 1].dt_txt);
-            }
+                var Icon1 = 'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon+ '.png';
+                $('#Icon1').attr('src', Icon1);
+                document.getElementById("Temp1" ).innerHTML = 'Temp: ' + Number(data.list[0].main.temp).toFixed(0) + "°F";
+                document.getElementById("Wind1").innerHTML = 'Wind: ' + Number(data.list[0].wind.speed) + " Mph";
+                document.getElementById("Humidity1").innerHTML = 'Humidity: ' + Number(data.list[0].main.humidity);
+                document.getElementById("Date1").innerHTML = (data.list[0].dt_txt);
 
-            
+                var Icon2 = 'https://openweathermap.org/img/w/' + data.list[8].weather[0].icon+ '.png';
+                $('#Icon2').attr('src', Icon2);
+                document.getElementById("Temp2" ).innerHTML = 'Temp: ' + Number(data.list[8].main.temp).toFixed(0) + "°F";
+                document.getElementById("Wind2").innerHTML = 'Wind: ' + Number(data.list[8].wind.speed) + " Mph";
+                document.getElementById("Humidity2").innerHTML = 'Humidity: ' + Number(data.list[8].main.humidity);
+                document.getElementById("Date2").innerHTML = (data.list[8].dt_txt);
+
+                var Icon3 = 'https://openweathermap.org/img/w/' + data.list[16].weather[0].icon+ '.png';
+                $('#Icon3').attr('src', Icon3);
+                document.getElementById("Temp3" ).innerHTML = 'Temp: ' + Number(data.list[16].main.temp).toFixed(0) + "°F";
+                document.getElementById("Wind3").innerHTML = 'Wind: ' + Number(data.list[16].wind.speed) + " Mph";
+                document.getElementById("Humidity3").innerHTML = 'Humidity: ' + Number(data.list[16].main.humidity);
+                document.getElementById("Date3").innerHTML = (data.list[16].dt_txt);
+
+                var Icon4 = 'https://openweathermap.org/img/w/' + data.list[24].weather[0].icon+ '.png';
+                $('#Icon4').attr('src', Icon4);
+                document.getElementById("Temp4" ).innerHTML = 'Temp: ' + Number(data.list[24].main.temp).toFixed(0) + "°F";
+                document.getElementById("Wind4").innerHTML = 'Wind: ' + Number(data.list[24].wind.speed) + " Mph";
+                document.getElementById("Humidity4").innerHTML = 'Humidity: ' + Number(data.list[24].main.humidity);
+                document.getElementById("Date4").innerHTML = (data.list[24].dt_txt);
+
+                var Icon5 = 'https://openweathermap.org/img/w/' + data.list[32].weather[0].icon+ '.png';
+                $('#Icon5').attr('src', Icon5);
+                document.getElementById("Temp5" ).innerHTML = 'Temp: ' + Number(data.list[32].main.temp).toFixed(0) + "°F";
+                document.getElementById("Wind5").innerHTML = 'Wind: ' + Number(data.list[32].wind.speed) + " Mph";
+                document.getElementById("Humidity5").innerHTML = 'Humidity: ' + Number(data.list[32].main.humidity);
+                document.getElementById("Date5").innerHTML = (data.list[32].dt_txt);
         })
 
 });
